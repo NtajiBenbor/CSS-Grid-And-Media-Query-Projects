@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+nav{
+    background-color: yellow;
+     padding: 15px;
+     width:100%;
+     
+}
+
+ul{
+    text-align:center;
+    padding: 0px;
+}
+
+
+li{
+    display: inline-block;
+    margin: 0px 20px;
+    border:2px dotted blue;
+    color: maroon;
+
+}
+
+@media all and (max-width:768px){
+    li{
+        display: block;
+        margin: 5px 0px;
+    }
+
+     body{
+        width: 100%;
+    }
+  
+    a{
+      margin: 30px;
+      display: block;
+    }
+    nav{
+       width: 100%;
+     
+    }
+} 
+.container-1{
+  
+}
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    display: inline-block;
+    width: 20%;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  @media all and (max-width:768px){
+  
+    a{
+      min-width: 50%;
+      margin: 10px auto;
+      display: block;
+    }
+    nav{
+     width:100%;
+     min-width: 50%;
+    }
+  }
+
+.container-2 :nth-child(1){
+    background: orange;
+    color: white;
+  }
+
+  .container-2 div:nth-child(2){
+    background: blue;
+    color: white;
+  }
+
+ .container-2 div:nth-child(3){
+    background: green;
+    color: white;
+  }
+
+  .container-2 div:nth-child(4){
+    background: magenta;
+    color: white;
+  }
+
+  .container-2 div:nth-child(5){
+    background: yellow;
+    color: red;
+  }
+  
+  .container-2 div:nth-child(6){
+    background: brown;
+    color: white;
+  }
+
+  .container-2 div:nth-child(7){
+    background: black;
+    color: white;
+  }
+
+  .container-2 div:nth-child(8){
+    background: maroon;
+    color: white;
+  }
+
+  .container-2 div:nth-child(9){
+    background: indigo;
+    color: white;
+  }
+
+  .container-2 div:nth-child(10){
+    background: yellowgreen;
+    color: white;
+  }
+
+  .container-2 div:nth-child(11){
+    background-color: aquamarine;
+  }
+  .container-2 div:nth-child(12){
+    background-color: pink;
+  }
+
+  
+.container-2{
+   width: 80%;
+   min-width: 50%;
+   display: grid;
+   grid-template: repeat(3,3.5fr)/repeat(3,4.5fr);
+   grid-auto-rows:1fr;
+   grid-auto-columns: 1fr;
+   gap: 15px;
+   margin: 0 auto;
+
+}
+
+#one{
+  grid-column: 1/-1;
+}
+
+#two{
+  grid-row: 2/6;
+}
+
+#five{
+  grid-column: 2/4;
+}
+
+#ten{
+  grid-column: 1/ span 3;
+}
